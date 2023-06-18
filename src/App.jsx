@@ -1,14 +1,21 @@
-// import SingIn from "./components/SingIn";
+import SingIn from "./components/SingIn";
 import SignUp from "./components/SignUp";
-// import ForgotPassword from "./components/ForgotPassword";
+import ForgotPassword from "./components/ForgotPassword";
+
+import { useState } from "react";
+import SignContext from "./context/SignContext";
 
 function App() {
+  const [step, setStep] = useState("signin");
+
   return (
-    <div className="container">
-      {/* <SingIn /> */}
-      {/* <ForgotPassword /> */}
-      <SignUp />
-    </div>
+    <SignContext.Provider value={{ step, setStep }}>
+      <div className="container">
+        {step === "signin" && <SingIn />}
+        {step === "signup" && <SignUp />}
+        {step === "forgot" && <ForgotPassword />}
+      </div>
+    </SignContext.Provider>
   );
 }
 
