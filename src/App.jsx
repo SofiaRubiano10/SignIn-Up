@@ -1,9 +1,11 @@
-import SingIn from "./components/SingIn";
+import ForgotPassword from "./components/ForgotPassword";
+// import SingIn from "./components/SingIn";
 
 function App() {
   return (
     <div className="container">
-      <SingIn />
+      {/* <SingIn /> */}
+      <ForgotPassword />
     </div>
   );
 }
