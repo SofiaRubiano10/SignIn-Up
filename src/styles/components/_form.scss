@@ -1,0 +1,23 @@
+@use "../variables" as v;
+@use "./label" as l;
+@use "./inputs" as i;
+@use "./error" as e;
+@use "./button" as b;
+@use "./forgot" as f;
+
+form {
+  fieldset {
+    border: none;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    padding: 0.1rem;
+    font-family: v.$font-family;
+    font-weight: 400;
+    @include l.label();
+    @include i.inputs();
+    @include e.error();
+  }
+  @include b.button();
+  @include f.forgot();
+}

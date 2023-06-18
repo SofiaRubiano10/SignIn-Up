@@ -7,19 +7,19 @@ const SingIn = () => {
           <fieldset>
             <label htmlFor="email">Email</label>
             <input type="email" id="email" autoFocus />
-            <p className="error2">Valid email required</p>
+            <p className="error">Valid email required</p>
           </fieldset>
           <fieldset>
             <label htmlFor="password">Password</label>
             <input type="password" id="password" />
-            <p className="error2">Password required</p>
+            <p className="error">Password required</p>
           </fieldset>
           <button type="submit">Login</button>
           <div className="forgot">Forgot password?</div>
         </form>
       </div>
       <p>
-        Don&apos;t have an account? <span>Singn up!</span>
+        Don&apos;t have an account? <span>Sign up!</span>
       </p>
     </main>
   );
