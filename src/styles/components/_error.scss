@@ -9,4 +9,11 @@
     margin-top: 0.4rem;
     display: none;
   }
+  .error-forgot {
+    color: v.$error;
+    font-size: 0.8rem;
+    font-weight: 500;
+    text-align: right;
+    margin-top: 0.4rem;
+  }
 }

@@ -16,5 +16,9 @@
     &:hover {
       background-color: v.$button-hover;
     }
+    &:disabled {
+      opacity: 0.35;
+      cursor: not-allowed;
+    }
   }
 }
