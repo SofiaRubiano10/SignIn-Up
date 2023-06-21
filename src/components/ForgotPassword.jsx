@@ -52,7 +52,7 @@ const ForgotPassword = () => {
               onBlur={handleBlur}
               autoFocus
             />
-            {errors.email && <p className="error-forgot">{errors.email}</p>}
+            {errors.email && <p className="error-msg">{errors.email}</p>}
           </fieldset>
           <button disabled={isSubmitting} type="submit">
             Remember me
